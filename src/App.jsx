@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Nabvar';
 import Home from './view/home';
 
@@ -23,10 +23,8 @@ function Footer() {
 }
 
 export default function App() {
-  const basename = import.meta.env.DEV ? '/' : '/DollyLand';
-
   return (
-    <BrowserRouter basename={basename}>
+    <HashRouter>
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', fontFamily: 'system-ui, sans-serif' }}>
         
         {/* El Navbar siempre estará visible arriba */}
@@ -46,6 +44,6 @@ export default function App() {
         <Footer />
 
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
