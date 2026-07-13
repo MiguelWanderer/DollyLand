@@ -23,8 +23,10 @@ function Footer() {
 }
 
 export default function App() {
+  const basename = import.meta.env.DEV ? '/' : '/DollyLand';
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', fontFamily: 'system-ui, sans-serif' }}>
         
         {/* El Navbar siempre estará visible arriba */}
