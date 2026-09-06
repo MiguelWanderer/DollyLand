@@ -1,0 +1,55 @@
+:root {
+  --text: #5d5657;
+  --text-h: #201b1b;
+  --bg: #fffdfb;
+  --border: #eadfdd;
+  --accent: #e92f83;
+  --crimson: #ba263a;
+  --pale: #fff0f3;
+  --ink: #201b1b;
+  --sans: 'Trebuchet MS', sans-serif;
+  --heading: Georgia, serif;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+#root { min-height: 100svh; }
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 400;
+  color: var(--text-h);
+}
+
+h1 { margin: 0; }
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
