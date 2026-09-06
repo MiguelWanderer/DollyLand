@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function ProductCard({ product }) {
   const formatPrice = (price) => {
     return new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(price);
